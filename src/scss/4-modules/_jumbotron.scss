@@ -1,0 +1,24 @@
+.jumbotron{
+    
+    width:47%;
+    color: $off-white;
+    background: none;
+    z-index: 2;
+    position: absolute;
+    h4{
+        font-family: semibold;
+        margin-bottom:30px;
+    }
+    p{
+        font-family: semibold;
+        font-style: italic;
+    }
+    
+
+    .btn{
+        background: $ocean !important;
+        border: 2px solid #fff;
+        font-style: none;
+        margin-top: 20px;
+    }
+}
