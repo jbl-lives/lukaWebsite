@@ -1,0 +1,75 @@
+.carousel{
+    
+    border: 2px solid white;
+    padding: 0 20px 10px 20px ;
+
+    .carousel-item{
+        
+        position: relative;
+        height: 535px;
+
+        .about-info{
+            float: left;
+            width: 50%;
+            height: 100%;
+            padding: 0 20px 0px 30px;
+            background: rgba(250, 250, 252, 0.521);
+            box-sizing: border-box;
+            
+
+            h2{
+                font-weight: normal;
+                color: $dark-gray;
+                margin-bottom: 30px;
+                
+
+                span{
+                    font-weight: bold;
+                    color: $dark-night;
+                }
+            }
+            .mission{
+                margin-top: 50px;
+            }
+            h5{
+                margin: 25px 0 10px 0;
+                color: $dark-night;
+                font-weight: semibold;
+                
+                span{
+                    padding: 3px 10px;
+                    box-shadow: 2px 2px 5px grey;
+                    margin-right: 10px;
+                    font-size : 80%;
+                    background: $ocean;
+                    color: $off-white;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .about-pic{
+            
+            width: 50%;
+            float: right;
+            height: 100%;
+            padding-right: 30px;
+            
+
+            img{
+                height: 100%;
+                float: right;
+                
+            }
+        }
+
+    }
+}
+
+.carousel-indicators{
+    background: $dark-night;
+    top: 102%;
+    bottom: -10%;
+    border: 1px solid white;
+    
+}

@@ -29,7 +29,7 @@ let htmlDIST = 'dist/pages'
 // Watches
 let jsWatch = './src/js/*.js';
 let styleWatch = './src/scss/**/*.scss';
-let imgWatch = imgSRC;
+let imgWatch = './src/img/*';
 let htmlWatch = htmlSRC;
 
 /******************************************/
@@ -122,6 +122,7 @@ gulp.task("default", gulp.parallel(css, js, images, html));
 function watch_files(done){
     gulp.watch(styleWatch, gulp.series(css));
     gulp.watch('./*.html').on('change', browserSync.reload)
+    gulp.watch(imgWatch), gulp.series(images)
     gulp.watch(jsWatch, gulp.series(js, reload));
 
     done();

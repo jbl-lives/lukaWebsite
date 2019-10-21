@@ -1,4 +1,4 @@
 $(function(){
     
-  console.log(' We still running')
+  console.log(' We still running');
 });
