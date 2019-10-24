@@ -1,0 +1,21 @@
+
+
+@mixin tablet {
+    @media (max-width: #{$tablet}){
+        @content;
+    }
+    
+}
+
+@mixin iPad-Pro{
+  @media (max-width: #{$iPad-Pro}){
+      @content;
+  }
+  
+}
+
+@mixin phone{
+    @media (max-width: #{$phone}){
+        @content;
+    }
+}

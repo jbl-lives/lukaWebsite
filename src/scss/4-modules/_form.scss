@@ -1,0 +1,52 @@
+form{
+    width: 100%;
+    background: rgb(248, 157, 157);
+    padding: 20px;
+
+    .card{
+        width: 100%;
+    }
+
+
+}
+
+.company-info{
+    background: yellow;
+    padding: 40px;
+    
+
+    ul{
+        list-style: none;
+
+        li{
+            display: flex;
+            margin-top: 30px;
+           
+            margin-left: -40px;
+            
+            .contact-icon{
+               
+                margin-top: 10px;
+
+                i{
+                    background: $ocean;
+                    border: 1px solid white;
+                    padding:20px 30px;
+                    
+                    border-radius: 50%;
+                    text-align: center;
+                    color: white;
+                    font-size: 150%;
+                }
+    
+            }
+           
+            .contact{
+                margin-left: 20px;
+                margin-top: 0;
+               
+                
+            }
+        }
+    }
+}

@@ -10,6 +10,10 @@ header{
         padding: 10px;
         height: 40px;
 
+        @include tablet{
+            display: none;
+        }
+
         #contacts,#social
         {
             display: flex;

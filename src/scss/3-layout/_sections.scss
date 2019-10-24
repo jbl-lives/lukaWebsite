@@ -7,6 +7,10 @@
     position: relative;
     background-image: url('../images/home-bg.jpg');
     display: block;
+
+    @include tablet{
+        margin-top: 50px;
+    }
    
 
 }
@@ -26,15 +30,20 @@
 
 #services{
     padding: 50px;
-    background: $ocean;
+    background: $dark-night;
 }
 
 #about{
-    
     padding: 100px 0;
 }
 
 #projects{
+    padding: 100px 0;
     background: #ccc;
+    
+}
+
+#contact{
     padding: 50px;
+    background: $ocean;
 }

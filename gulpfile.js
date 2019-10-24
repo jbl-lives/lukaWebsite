@@ -123,7 +123,7 @@ function watch_files(done){
     gulp.watch(styleWatch, gulp.series(css));
     gulp.watch('./*.html').on('change', browserSync.reload)
     gulp.watch(imgWatch), gulp.series(images)
-    gulp.watch(jsWatch, gulp.series(js, reload));
+    gulp.watch(jsWatch, gulp.series(js));
 
     done();
 }

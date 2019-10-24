@@ -1,0 +1,23 @@
+#banner{
+    background: grey;
+    color: $off-white;
+    text-align: center;
+    padding: 80px 20px; 
+
+    p::after{
+        content: ' ';
+        background: red;
+        width: 40%;
+        height: 10px;
+
+
+    }
+
+}
+
+#banner::before{
+        content: ' ';
+        background: red;
+        width: 40%;
+        height: 10px;
+}

@@ -3,24 +3,42 @@
     border: 2px solid white;
     padding: 0 20px 10px 20px ;
 
+    @include tablet{
+        padding: 0;
+    }
+
     .carousel-item{
         
         position: relative;
         height: 535px;
+        
 
         .about-info{
             float: left;
-            width: 50%;
+            width: 60%;
             height: 100%;
-            padding: 0 20px 0px 30px;
-            background: rgba(250, 250, 252, 0.521);
+            padding: 0 40px 0px 30px;
+            
             box-sizing: border-box;
+
+            @include phone{ 
+                width: 100%;
+                background: rgba(250, 250, 252, 0.842);
+                position: absolute;
+                z-index: 2;
+            }
+
+
             
 
             h2{
                 font-weight: normal;
                 color: $dark-gray;
                 margin-bottom: 30px;
+                @include tablet{
+                    font-size: 20px;
+                }
+
                 
 
                 span{
@@ -35,6 +53,10 @@
                 margin: 25px 0 10px 0;
                 color: $dark-night;
                 font-weight: semibold;
+
+                @include tablet{
+                    font-size: 16px;
+                }
                 
                 span{
                     padding: 3px 10px;
@@ -46,14 +68,33 @@
                     border-radius: 50%;
                 }
             }
+
+            p{
+                @include tablet{
+                    font-size: 14px;  
+                }
+
+                @include phone{
+                    color: $dark-gray;
+                }
+            }
         }
 
         .about-pic{
             
-            width: 50%;
+            width: 40%;
             float: right;
             height: 100%;
             padding-right: 30px;
+            
+
+            @include phone{
+                width: 100%;
+                float: left;
+                position: absolute;
+                padding: 0;
+                z-index:0;
+            }
             
 
             img{
@@ -73,3 +114,4 @@
     border: 1px solid white;
     
 }
+

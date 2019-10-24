@@ -2,13 +2,14 @@
     .card{
         background: none;
         border: none;
+        
     }
 }
 .service{
-    background: pink;
+    
     width: 90%;
     margin: 20px auto;
-    height: 260px;
+    height: 280px;
     padding: 0 !important;
     position: relative;
     border: 2px solid $off-white;
@@ -20,15 +21,20 @@
     }
 
     .service-tag{
-        background: greenyellow;
+        background: $dark-gray;
         position: absolute;
         width: 100%;
         bottom: 0;
+        color: $off-white;
         display: flex;
         padding: 10px;
         border-top: 2px solid $off-white;
         justify-content: space-between;
 
     }
+    #sc{background: $ocean;}
+    #sl{background: $light-gray;}
+    #rf{background: $dark-night;}
+    #sf{background: $sky;}
 
 }
