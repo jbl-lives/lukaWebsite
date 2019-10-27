@@ -1,3 +1,5 @@
+
+var zero = 0;
 $(function(){
     
   console.log(' We still running');
@@ -9,5 +11,12 @@ $(function(){
     else{
     $('#2container').addClass('container-fluid')
     }
-})
+});
+
+
+$(window).on('scroll', function(){
+  $('header').toggleClass('hide', $(window).scrollTop() > zero);
+  zero = $(window).scrollTop();
+
+});
 });

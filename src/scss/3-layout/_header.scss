@@ -2,6 +2,7 @@
 header{
     width: 100%;
     background: $off-white;
+    transition: linear 300ms;
 
     .header-info{
         background: $dark-night;
@@ -28,4 +29,8 @@ header{
         display: flex;
         justify-content: space-between;
     }
+}
+
+.hide{
+    transform: translateY(-100%);
 }

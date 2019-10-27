@@ -12,3 +12,21 @@ section{
     border-radius: 25px !important;  
 }
 
+.container{
+    @include phone{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    
+    
+    }
+}
+
+h1{
+        position: absolute;
+        color: #ccc;
+        font-size: 100px;
+        
+    }

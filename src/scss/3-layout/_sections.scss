@@ -7,9 +7,18 @@
     position: relative;
     background-image: url('../images/home-bg.jpg');
     display: block;
+    background-attachment: fixed;
+    
+    
 
     @include tablet{
         margin-top: 50px;
+        height: 32rem;
+
+    }
+
+    @include phone{
+        height: 40rem;
     }
    
 
@@ -29,21 +38,34 @@
 }
 
 #services{
-    padding: 50px;
+    padding: 100px 50px;
     background: $dark-night;
+    position: relative;
+    @include phone{
+        overflow-x: hidden;
+    }
+    
 }
 
 #about{
     padding: 100px 0;
+    position: relative;
 }
 
 #projects{
     padding: 100px 0;
-    background: #ccc;
     
+    @include phone{
+        overflow-x: hidden;
+    }
+      
 }
 
 #contact{
-    padding: 50px;
-    background: $ocean;
+    padding:100px 50px;
+    background: $off-white;
+
+    @include phone{
+        padding: 100px 0;
+    }
 }

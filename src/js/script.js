@@ -9,5 +9,12 @@ $(function(){
     else{
     $('#2container').addClass('container-fluid')
     }
-})
+});
+
+var zero = 0;
+$(window).on('scroll', function(){
+  $('header').toggleClass('hide'), $(window).scrollTop() > zero;
+  zero = $(window).scrollTop();
+
+});
 });

@@ -1,18 +1,94 @@
+#contact{
+    .row{
+        width: 90%;
+        margin: 0 auto;
+
+        .card{
+            background: $dark-night;
+            padding: 0;
+            border: none;
+            width: auto;
+
+            @include phone{
+                width: 100%;
+            }
+        }
+    }
+
+    
+    .contact-header{
+        margin-top: -100px;
+        left: 13%;
+        @include phone{
+            font-size: 90px;
+            margin-top: -80px;
+            left: 7%;
+        }
+    }
+
+
+    
+}
+
 form{
     width: 100%;
-    background: rgb(248, 157, 157);
+    background: $ocean;
     padding: 20px;
+    float: right;
+    color: $dark-night;
 
-    .card{
+    @include phone{
         width: 100%;
     }
 
+    textarea{
+        border-radius: 4px;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        
+    }
+
+    .submit{
+        background: $dark-night;
+        color: $off-white;
+        padding-left: 20px;
+         padding-right:  20px;
+         float: right;
+         border: 1px solid $off-white;
+         &:hover{
+             background: $off-white;
+             border: 1px solid $dark-night;
+         }
+    }
 
 }
 
 .company-info{
-    background: yellow;
+    background: #ffffff;
     padding: 40px;
+    width: 80%;
+    box-shadow: 2px 2px 4px rgb(109, 108, 108);
+    @include phone{
+        width: 100%;
+
+    }
+
+    h3{
+        color: $dark-gray;
+        font-weight: 400;
+        span{
+            color: $dark-night;
+            font-weight: bold;
+        }
+    }
+
+    h5{
+        color: $dark-gray;
+    }
+    .contact-small-info{
+        color: $ocean;
+    }
     
 
     ul{
@@ -29,8 +105,7 @@ form{
                 margin-top: 10px;
 
                 i{
-                    background: $ocean;
-                    border: 1px solid white;
+                    background: rgba(0, 176, 230, 0.37);
                     padding:20px 30px;
                     
                     border-radius: 50%;

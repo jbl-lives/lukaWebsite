@@ -10,6 +10,17 @@
         margin: 0;
         max-width: 340px;
     }
+
+    .project-header{
+        right: 13%;
+        margin-top: -70px;
+
+        @include phone{
+            font-size: 90px;
+            margin-top: -60px;
+            right: 7%;
+        }
+    }
 }
 
 .project{

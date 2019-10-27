@@ -5,13 +5,40 @@
     background: none;
     z-index: 2;
     position: absolute;
+
+    @include tablet{ 
+        width: 60%;
+    }
+
+    @include phone{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    
     h4{
         font-family: semibold;
         margin-bottom:30px;
+    
+        @include tablet{
+            font-size: 40px;
+        }
+       
     }
     p{
         font-family: semibold;
         font-style: italic;
+
+        @include tablet{
+            font-size: 18px;
+        }
+
+        @include phone{
+            font-style: normal;
+            font-weight: regular;
+        }
+
     }
     
 
@@ -20,5 +47,11 @@
         border: 2px solid #fff;
         font-style: normal;
         margin-top: 20px;
+        padding:5px 20px;
+
+        @include phone{
+            width: 90%;
+            margin-top: 50px;
+        }
     }
 }

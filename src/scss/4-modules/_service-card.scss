@@ -4,6 +4,20 @@
         border: none;
         
     }
+
+    @include phone{
+        padding: 30px 0;
+    }
+
+    .service-header{
+        margin-top: -70px;
+        left: 11%;
+        @include phone{
+            font-size: 90px;
+            margin-top: -60px;
+            left: 7%;
+        }
+    }
 }
 .service{
     
@@ -30,6 +44,12 @@
         padding: 10px;
         border-top: 2px solid $off-white;
         justify-content: space-between;
+
+        h3{
+            @include phone{
+                font-size: 20px;
+            }
+        }
 
     }
     #sc{background: $ocean;}
